@@ -9,11 +9,11 @@ condition_choice = [
     ('5', 'brand new'),
 ]
 class product(models.Model):
-    product_id = models.IntegerField(auto_created=True)
+    
     Product_name = models.CharField(max_length= 50)
     Product_Description = models.CharField(max_length= 200)
     Produc_Condition = models.CharField(max_length = 10, 
                                     choices = condition_choice)
     Listing_date = models.DateField( auto_now=True)
-    Upload_and_image = models.FileField()
+    Upload_and_image = models.FileField(null=True, blank=True)
 
