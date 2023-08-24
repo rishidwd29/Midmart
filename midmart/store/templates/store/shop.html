@@ -1,10 +1,13 @@
 {%extends 'store/main.html'%}
 {% block content%}
+<br>
+<div class="placeholder">
 <h3>
     Welcome To Your Shop
     <small class="text-body-secondary">State your Product to Sell</small>
 </h3>
-<hr>
+</div>
+
 <br>
 <form action="" method = "POST" enctype="multipart/form-data">
 {% csrf_token%}

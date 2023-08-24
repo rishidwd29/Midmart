@@ -4,13 +4,13 @@
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
-  <hr>
+  <br>
 {% for i in allproducts %}
 <div class="card" >
   <div class="card-header">
     {{i.Product_name}}
   </div>
-  <img src="..." class="card-img-top" alt="...">
+  <img src={{i.upload_and_image}} class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">{{i.Product_name}}</h5>
     <p class="card-text">{{i.Product_Description}}</p>
